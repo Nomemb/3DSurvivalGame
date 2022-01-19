@@ -78,8 +78,12 @@ public class PlayerController : MonoBehaviour
         TryCrouch();
         Move();
         MoveCheck();
-        CameraRotation();
-        CharacterRotation();
+        // 인벤토리가 꺼져있을 때만 시야 움직일 수 있게
+        if (!Inventory.inventoryActivated)
+        {
+            CameraRotation();
+            CharacterRotation();
+        }
     }
 
     // 앉기 시도
@@ -184,7 +188,7 @@ public class PlayerController : MonoBehaviour
 
         isRun = true;
         theCrosshair.RunningAnimation(isRun);
-        theStatusController.DecreaseStamina(10);
+        theStatusController.DecreaseStamina(2);
         applySpeed = runSpeed;
     }
 

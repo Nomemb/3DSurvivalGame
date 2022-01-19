@@ -49,13 +49,17 @@ public class GunController : MonoBehaviour
 
     void Update()
     {
-        if (isActivate)
+        if (!Inventory.inventoryActivated)
         {
 
-            GunFireRateCalc();
-            TryFire();
-            TryReload();
-            TryFineSight();
+            if (isActivate)
+            {
+
+                GunFireRateCalc();
+                TryFire();
+                TryReload();
+                TryFineSight();
+            }
         }
     }
 

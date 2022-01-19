@@ -54,6 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\HUD.cs" />
+    <Compile Include="Assets\Scripts\ActionController.cs" />
     <Compile Include="Assets\Scripts\AxeController.cs" />
     <Compile Include="Assets\Scripts\CloseWeapon.cs" />
     <Compile Include="Assets\Scripts\CloseWeaponController.cs" />
@@ -61,10 +62,17 @@
     <Compile Include="Assets\Scripts\Gun.cs" />
     <Compile Include="Assets\Scripts\GunController.cs" />
     <Compile Include="Assets\Scripts\HandController.cs" />
+    <Compile Include="Assets\Scripts\Item.cs" />
+    <Compile Include="Assets\Scripts\ItemEffectDatabase.cs" />
+    <Compile Include="Assets\Scripts\ItemPickUp.cs" />
     <Compile Include="Assets\Scripts\PickaxeController.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Rock.cs" />
     <Compile Include="Assets\Scripts\SoundManager.cs" />
+    <Compile Include="Assets\Scripts\UI Sripts\DragSlot.cs" />
+    <Compile Include="Assets\Scripts\UI Sripts\Inventory.cs" />
+    <Compile Include="Assets\Scripts\UI Sripts\Slot.cs" />
+    <Compile Include="Assets\Scripts\UI Sripts\SlotToolTip.cs" />
     <Compile Include="Assets\Scripts\UI Sripts\StatusController.cs" />
     <Compile Include="Assets\Scripts\WeaponManager.cs" />
     <Compile Include="Assets\Scripts\WeaponSway.cs" />

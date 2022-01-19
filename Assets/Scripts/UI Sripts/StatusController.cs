@@ -176,6 +176,17 @@ public class StatusController : MonoBehaviour
         currentDp -= _count;
     }
 
+    public void IncreaseSP(int _count)
+    {
+        if (currentSp + _count < sp)
+            currentSp += _count;
+        else
+            currentSp = sp;
+    }
+    public void DecreaseSP(int _count)
+    {
+        currentSp -= _count;
+    }
     public void IncreaseHungry(int _count)
     {
         if (currentHungry + _count < hungry)
